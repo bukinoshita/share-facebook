@@ -1,13 +1,22 @@
 {
   "name": "share-facebook",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Create a Facebook share url with ease",
   "main": "index.js",
   "repository": "https://github.com/bukinoshita/share-facebook.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
-  "keywords": ["share", "facebook", "fb", "url", "social", "media"],
-  "files": ["index.js"],
+  "keywords": [
+    "share",
+    "facebook",
+    "fb",
+    "url",
+    "social",
+    "media"
+  ],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "xo & ava"
   },
@@ -17,7 +26,9 @@
     "xo": "^0.18.2"
   },
   "xo": {
-    "extends": ["prettier"],
+    "extends": [
+      "prettier"
+    ],
     "rules": {
       "camelcase": 0
     }
