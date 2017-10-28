@@ -1,0 +1,25 @@
+{
+  "name": "share-facebook",
+  "version": "0.0.0",
+  "description": "Create a Facebook share url with ease",
+  "main": "index.js",
+  "repository": "https://github.com/bukinoshita/share-facebook.git",
+  "author": "Bu Kinoshita <bukinoshita@gmail.com>",
+  "license": "MIT",
+  "keywords": ["share", "facebook", "fb", "url", "social", "media"],
+  "files": ["index.js"],
+  "scripts": {
+    "test": "xo & ava"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "eslint-config-prettier": "^2.6.0",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "extends": ["prettier"],
+    "rules": {
+      "camelcase": 0
+    }
+  }
+}
