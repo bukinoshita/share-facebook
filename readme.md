@@ -17,7 +17,7 @@ const shareFacebook = require('share-facebook')
 
 shareFacebook({
   quote: 'Check this library to help you create share facebook url',
-  url: 'https://bukinoshita.io',
+  href: 'https://bukinoshita.io',
   redirect_uri: 'https://bukinoshita.io',
   app_id: 'APP_ID'
 })
