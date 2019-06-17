@@ -1,8 +1,7 @@
-'use strict'
+// Lib
+const treat = require('./lib/treat')
 
-const treat = (str, { replace = '' } = {}) => str.split(' ').join(replace)
-
-module.exports = ({
+const shareFacebook = ({
   app_id,
   redirect_uri,
   display = 'page',
@@ -10,36 +9,24 @@ module.exports = ({
   hashtags,
   quote,
   mobile_iframe = false
-}) => {
+} = {}) => {
   if (!app_id) {
-    return new TypeError('`app_id` is required')
+    throw new TypeError('`app_id` is required')
   }
 
   const baseUrl = 'https://www.facebook.com/dialog/share'
   const appId = `app_id=${app_id}`
-  const hasRedirectUri = redirect_uri
-    ? `redirect_uri=${redirect_uri}`
-    : undefined
-  const hasDisplay = display ? `display=${display}` : undefined
-  const hasHref = href ? `href=${href}` : undefined
-  const hasHashtags = hashtags ? `hashtag=${treat(hashtags)}` : undefined
-  const hasQuote = quote
-    ? `quote=${treat(quote, { replace: '%20' })}`
-    : undefined
-  const hasMobileIframe = mobile_iframe
-    ? `mobile_iframe=${mobile_iframe}`
-    : undefined
-  const arr = [
-    appId,
-    hasRedirectUri,
-    hasDisplay,
-    hasHref,
-    hasQuote,
-    hasHashtags,
-    hasMobileIframe
-  ]
+  const hasRedirectUri = redirect_uri && `redirect_uri=${redirect_uri}`
+  const hasDisplay = display && `display=${display}`
+  const hasHref = href && `href=${href}`
+  const hasHashtags = hashtags && `hashtag=${treat(hashtags)}`
+  const hasQuote = quote && `quote=${treat(quote, { replace: '%20' })}`
+  const hasMobileIframe = mobile_iframe && `mobile_iframe=${mobile_iframe}`
+  const arr = [appId, hasRedirectUri, hasDisplay, hasHref, hasQuote, hasHashtags, hasMobileIframe]
   const filtering = arr.filter(Boolean)
   const queries = filtering.join('&')
 
   return `${baseUrl}?${queries}`
 }
+
+module.exports = shareFacebook

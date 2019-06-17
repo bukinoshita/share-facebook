@@ -2,13 +2,11 @@
 
 > Create a Facebook share url with ease
 
-
 ## Install
 
 ```bash
 $ yarn add share-facebook
 ```
-
 
 ## Usage
 
@@ -24,13 +22,9 @@ shareFacebook({
 // https://www.facebook.com/dialog/share?app_id=APP_ID&redirect_uri=https://bukinoshita.io&display=page&quote=Check%20this%20library%20to%20help%20you%20create%20share%20facebook%20url
 ```
 
-_When add the `url` to a `<a/>` tag it should work like [this](https://www.facebook.com/dialog/share?app_id=145634995501895&redirect_uri=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fexplorer&display=page&href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F&quote=Sharing%20with%20FB&quote=Sharing%20with%20FB)_
-
-
 ## Examples
 
 Check the [examples](https://github.com/bukinoshita/share-facebook/blob/master/examples)
-
 
 ## API
 
@@ -67,7 +61,6 @@ Determines how the dialog is rendered.
 - If you are using the Facebook SDK for JavaScript, this will default to a modal `iframe` type for people logged into your app or `async` when using within a game on Facebook.com, and a `popup` window for everyone else. You can also force the `popup` type when when you use the Facebook SDK for JavaScript, if necessary.
 - Mobile web apps will always default to the `touch` display type.
 
-
 #### href
 
 Type: `string`<br/>
@@ -97,11 +90,9 @@ Example: `true`
 
 If set to true the share button will open the share dialog in an iframe on top of your website (For more information see Mobile Web Share Dialog. This option is only available for mobile, not desktop.
 
-
 ## Related
 
 - [share-twitter](https://github.com/bukinoshita/share-twitter) — Create a Twitter share url with ease
-
 
 ## License
 
