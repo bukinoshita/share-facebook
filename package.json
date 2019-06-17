@@ -15,7 +15,8 @@
     "media"
   ],
   "files": [
-    "index.js"
+    "index.js",
+    "lib"
   ],
   "scripts": {
     "test": "nyc ava",
