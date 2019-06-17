@@ -1,6 +1,6 @@
 {
   "name": "share-facebook",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Create a Facebook share url with ease",
   "main": "index.js",
   "repository": "https://github.com/bukinoshita/share-facebook.git",
