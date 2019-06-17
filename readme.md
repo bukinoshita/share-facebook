@@ -1,4 +1,4 @@
-# share-facebook [![Build Status](https://travis-ci.org/bukinoshita/share-facebook.svg?branch=master)](https://travis-ci.org/bukinoshita/share-facebook)
+# share-facebook [![Build Status](https://travis-ci.org/bukinoshita/share-facebook.svg?branch=master)](https://travis-ci.org/bukinoshita/share-facebook) [![codecov](https://codecov.io/gh/bukinoshita/share-facebook/branch/master/graph/badge.svg)](https://codecov.io/gh/bukinoshita/share-facebook)
 
 > Create a Facebook share url with ease
 
